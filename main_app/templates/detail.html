@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Nails Details</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ nail.name }}</span>
+    <p>Brand: {{ nail.brand }}</p>
+    <p>Description: {{ nail.description }}</p>
+   
+      <p>Color: {{ nail.color }}</p>
+    
+      <p>Price: ${{ nail.price }}</p>
+  </div>
+</div>
+
+{% endblock %}
+
+

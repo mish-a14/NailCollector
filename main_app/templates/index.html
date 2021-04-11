@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Nails List</h1>
+
+{% for n in nails %}
+  <div class="card">
+    <a href='/index/{{ n.id }}/'>
+    <div class="card-content">
+      <span class="card-title">{{ n.name }}</span>
+      <p>Brand: {{ n.brand }}</p>
+      <p>Description: {{ n.description }}</p>
+      <p>color: {{ n.color }}</p>
+      <p>price: ${{ n.price }}</p>
+    </div>
+    </a>
+  </div>
+
+{% endfor %}
+
+{% endblock %}
